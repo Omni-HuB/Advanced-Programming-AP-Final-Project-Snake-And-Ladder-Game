@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="348.0" prefWidth="553.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.snake_and_ladder.startScreen2Controller">
+   <ImageView fitHeight="432.0" fitWidth="637.0" pickOnBounds="true">
+      <Image url="@../../../hippo.png" />
+   </ImageView>
+   <ProgressBar fx:id="progressBar" layoutX="119.0" layoutY="380.0" opacity="0.74" prefHeight="24.0" prefWidth="415.0" progress="0.0">
+      <effect>
+         <DropShadow height="0.0" radius="0.0" spread="0.9" width="0.48">
+            <color>
+               <Color red="0.046235378831624985" green="0.9078947305679321" blue="0.8073678016662598" />
+            </color>
+         </DropShadow>
+      </effect></ProgressBar>
+   <Label fx:id="progressBarLabel" alignment="CENTER" layoutX="201.0" layoutY="383.0" prefHeight="17.0" prefWidth="255.0" text="Label" textAlignment="CENTER" wrapText="true">
+      <font>
+         <Font name="Calibri Bold" size="14.0" />
+      </font></Label>
+</AnchorPane>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="880.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.snake_and_ladder.Game_Controller">
+    <ImageView fitHeight="880.0" fitWidth="767.0" opacity="0.82" pickOnBounds="true">
+        <Image url="@../../../NotAvailable.png" />
+        <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" choke="0.31" height="38.59" radius="15.865000000000002" width="26.87">
+                <color>
+                    <Color red="0.8561151027679443" green="1.0" />
+                </color>
+                <input>
+                    <GaussianBlur />
+                </input>
+            </InnerShadow>
+        </effect>
+    </ImageView>
+    <Separator layoutX="278.0" layoutY="376.0" opacity="0.62" prefHeight="3.0" prefWidth="200.0">
+      <effect>
+          <Lighting surfaceScale="6.78">
+              <bumpInput>
+                  <Shadow />
+              </bumpInput>
+              <light>
+                  <Light.Distant azimuth="177.93" elevation="37.24">
+                      <color>
+                          <Color green="1.0" blue="0.4166666567325592" />
+                      </color>
+                  </Light.Distant>
+              </light>
+          </Lighting>
+      </effect></Separator>
+    <Separator layoutX="278.0" layoutY="267.0" opacity="0.62" prefWidth="200.0">
+      <effect>
+          <Lighting surfaceScale="6.78">
+              <bumpInput>
+                  <Shadow />
+              </bumpInput>
+              <light>
+                  <Light.Distant azimuth="177.93" elevation="37.24">
+                      <color>
+                          <Color green="1.0" blue="0.4166666567325592" />
+                      </color>
+                  </Light.Distant>
+              </light>
+          </Lighting>
+      </effect></Separator>
+    <Separator layoutX="278.0" layoutY="488.0" opacity="0.62" prefWidth="200.0">
+      <effect>
+          <Lighting surfaceScale="6.78">
+              <bumpInput>
+                  <Shadow />
+              </bumpInput>
+              <light>
+                  <Light.Distant azimuth="177.93" elevation="37.24">
+                      <color>
+                          <Color green="1.0" blue="0.4166666567325592" />
+                      </color>
+                  </Light.Distant>
+              </light>
+          </Lighting>
+      </effect></Separator>
+    <Separator layoutX="278.0" layoutY="605.0" opacity="0.62" prefWidth="200.0">
+      <effect>
+          <Lighting surfaceScale="6.78">
+              <bumpInput>
+                  <Shadow />
+              </bumpInput>
+              <light>
+                  <Light.Distant azimuth="177.93" elevation="37.24">
+                      <color>
+                          <Color green="1.0" blue="0.4166666567325592" />
+                      </color>
+                  </Light.Distant>
+              </light>
+          </Lighting>
+      </effect></Separator>
+    <Button fx:id="vsComputer" alignment="CENTER" layoutX="318.0" layoutY="218.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="121.0" textAlignment="CENTER" wrapText="true" />
+    <Button fx:id="onlineMultiplayer" alignment="CENTER" contentDisplay="CENTER" layoutX="318.0" layoutY="404.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="121.0" wrapText="true" />
+    <Button fx:id="playWithFriend" alignment="CENTER" layoutX="318.0" layoutY="516.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="121.0" textAlignment="CENTER" wrapText="true" />
+    <Button fx:id="coinSlot" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="1.0" layoutX="76.0" layoutY="746.0" mnemonicParsing="false" text="Coin Slot" wrapText="true" />
+    <Button fx:id="medal" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="200.0" layoutY="746.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="68.0" text="medal" />
+    <Button fx:id="playLudo" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="339.0" layoutY="746.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="78.0" text="playLudo">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets></Button>
+    <Button fx:id="people" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="496.0" layoutY="746.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="61.0" text="people" />
+    <Separator layoutX="265.0" layoutY="175.0" opacity="0.62" orientation="VERTICAL" prefHeight="153.0" prefWidth="6.0">
+      <effect>
+         <Lighting diffuseConstant="1.47" specularConstant="0.6" specularExponent="40.0" surfaceScale="10.0">
+            <bumpInput>
+               <Shadow />
+            </bumpInput>
+            <light>
+               <Light.Distant>
+                  <color>
+                     <Color red="0.48021581768989563" green="0.75" />
+                  </color>
+               </Light.Distant>
+            </light>
+         </Lighting>
+      </effect></Separator>
+    <Separator layoutX="265.0" layoutY="346.0" opacity="0.62" orientation="VERTICAL" prefHeight="200.0">
+      <effect>
+          <Lighting diffuseConstant="1.47" specularConstant="0.6" specularExponent="40.0" surfaceScale="10.0">
+              <bumpInput>
+                  <Shadow />
+              </bumpInput>
+              <light>
+                  <Light.Distant>
+                      <color>
+                          <Color red="0.48021581768989563" green="0.75" />
+                      </color>
+                  </Light.Distant>
+              </light>
+          </Lighting>
+      </effect></Separator>
+    <Separator layoutX="482.0" layoutY="175.0" opacity="0.62" orientation="VERTICAL" prefHeight="153.0" prefWidth="6.0">
+      <effect>
+          <Lighting diffuseConstant="1.47" specularConstant="0.6" specularExponent="40.0" surfaceScale="10.0">
+              <bumpInput>
+                  <Shadow />
+              </bumpInput>
+              <light>
+                  <Light.Distant>
+                      <color>
+                          <Color red="0.48021581768989563" green="0.75" />
+                      </color>
+                  </Light.Distant>
+              </light>
+          </Lighting>
+      </effect></Separator>
+    <Separator layoutX="482.0" layoutY="346.0" opacity="0.62" orientation="VERTICAL" prefHeight="200.0">
+      <effect>
+          <Lighting diffuseConstant="1.47" specularConstant="0.6" specularExponent="40.0" surfaceScale="10.0">
+              <bumpInput>
+                  <Shadow />
+              </bumpInput>
+              <light>
+                  <Light.Distant>
+                      <color>
+                          <Color red="0.48021581768989563" green="0.75" />
+                      </color>
+                  </Light.Distant>
+              </light>
+          </Lighting>
+      </effect></Separator>
+    <Button fx:id="freeCoins" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="619.0" layoutY="746.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="68.0" text="freeCoins" />
+    <Button fx:id="lucky7" alignment="CENTER" contentDisplay="CENTER" layoutX="318.0" layoutY="637.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="121.0" textAlignment="CENTER" wrapText="true" />
+    <Separator layoutX="278.0" layoutY="716.0" opacity="0.62" prefWidth="200.0">
+      <effect>
+          <Lighting surfaceScale="6.78">
+              <bumpInput>
+                  <Shadow />
+              </bumpInput>
+              <light>
+                  <Light.Distant azimuth="177.93" elevation="37.24">
+                      <color>
+                          <Color green="1.0" blue="0.4166666567325592" />
+                      </color>
+                  </Light.Distant>
+              </light>
+          </Lighting>
+      </effect></Separator>
+    <Separator layoutX="262.0" layoutY="570.0" opacity="0.62" orientation="VERTICAL" prefHeight="163.0" prefWidth="0.0">
+      <effect>
+          <Lighting diffuseConstant="1.47" specularConstant="0.6" specularExponent="40.0" surfaceScale="10.0">
+              <bumpInput>
+                  <Shadow />
+              </bumpInput>
+              <light>
+                  <Light.Distant>
+                      <color>
+                          <Color red="0.48021581768989563" green="0.75" />
+                      </color>
+                  </Light.Distant>
+              </light>
+          </Lighting>
+      </effect></Separator>
+    <Separator layoutX="488.0" layoutY="570.0" opacity="0.62" orientation="VERTICAL" prefHeight="163.0" prefWidth="6.0">
+      <effect>
+          <Lighting diffuseConstant="1.47" specularConstant="0.6" specularExponent="40.0" surfaceScale="10.0">
+              <bumpInput>
+                  <Shadow />
+              </bumpInput>
+              <light>
+                  <Light.Distant>
+                      <color>
+                          <Color red="0.48021581768989563" green="0.75" />
+                      </color>
+                  </Light.Distant>
+              </light>
+          </Lighting>
+      </effect></Separator>
+    <Button fx:id="trim" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="85.0" layoutY="198.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="102.0" text="trim" textAlignment="CENTER" wrapText="true" AnchorPane.bottomAnchor="613.0" AnchorPane.leftAnchor="85.0" AnchorPane.rightAnchor="580.0" AnchorPane.topAnchor="198.0" />
+    <Button fx:id="stuff" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="1.0" layoutX="551.0" layoutY="198.0" mnemonicParsing="false" prefHeight="69.0" prefWidth="102.0" text="stuff" textAlignment="CENTER" wrapText="true" />
+   <Button fx:id="exit" alignment="CENTER" contentDisplay="CENTER" layoutX="354.0" layoutY="824.0" minHeight="20.0" minWidth="53.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="68.0" text="EXIT" wrapText="true">
+      <font>
+         <Font size="7.0" />
+      </font></Button>
+    <Button fx:id="player1VsPlayer2" alignment="CENTER" layoutX="318.0" layoutY="301.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="121.0" textAlignment="CENTER" wrapText="true">
+      <font>
+         <Font size="11.0" />
+      </font></Button>
+   <ImageView fx:id="pointing" fitHeight="42.0" fitWidth="46.0" layoutX="286.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true" rotate="-32.0">
+      <image>
+         <Image url="@pointing.png" />
+      </image>
+      <effect>
+         <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+      </effect>
+   </ImageView>
+   <ImageView fitHeight="163.0" fitWidth="532.0" layoutX="108.0" layoutY="14.0" pickOnBounds="true">
+      <image>
+         <Image url="@menuTitleSnake.png" />
+      </image>
+      <effect>
+         <Bloom threshold="0.45">
+            <input>
+               <Glow>
+                  <input>
+                     <Lighting>
+                        <bumpInput>
+                           <Shadow>
+                              <input>
+                                 <InnerShadow />
+                              </input>
+                           </Shadow>
+                        </bumpInput>
+                        <light>
+                           <Light.Distant />
+                        </light>
+                     </Lighting>
+                  </input>
+               </Glow>
+            </input>
+         </Bloom>
+      </effect>
+   </ImageView>
+</AnchorPane>

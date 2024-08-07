@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Light.Point?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="653.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.snake_and_ladder.InstructionMediaController">
+   <MediaView fx:id="mediaView" fitHeight="400.0" fitWidth="650.0" layoutY="2.0" />
+   <Button fx:id="skip" alignment="CENTER" contentDisplay="CENTER" layoutX="506.0" layoutY="339.0" mnemonicParsing="false" opacity="0.28" prefHeight="30.0" prefWidth="101.0" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+      <font>
+         <Font name="Bodoni MT" size="18.0" />
+      </font>
+      <effect>
+         <Blend />
+      </effect>
+      <graphic>
+         <Label alignment="CENTER" text="SKIP" textAlignment="CENTER" textFill="BLUE" wrapText="true">
+            <font>
+               <Font name="System Bold" size="19.0" />
+            </font>
+            <effect>
+               <Lighting diffuseConstant="2.0" specularConstant="0.46" specularExponent="40.0" surfaceScale="3.68">
+                  <bumpInput>
+                     <Bloom />
+                  </bumpInput>
+                  <light>
+                     <Light.Point />
+                  </light>
+               </Lighting>
+            </effect>
+         </Label>
+      </graphic>
+   </Button>
+</AnchorPane>

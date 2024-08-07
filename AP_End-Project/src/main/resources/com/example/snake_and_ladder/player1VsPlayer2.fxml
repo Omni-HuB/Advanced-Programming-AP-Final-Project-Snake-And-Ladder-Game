@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#begin" prefHeight="399.0" prefWidth="440.0" style="-fx-background-color: #CDDFFF#ADDFFF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.snake_and_ladder.player1VsPlayer2Controller">
+   <children>
+      <ImageView fx:id="img" fitHeight="286.0" fitWidth="286.0" layoutY="1.0" onMouseClicked="#findloc" pickOnBounds="true">
+         <Image url="@Game_Board_2.png" />
+      </ImageView>
+      <Label fx:id="locval" layoutX="336.0" layoutY="118.0" text="locValue" />
+      <Label fx:id="diceValue" layoutX="336.0" layoutY="267.0" prefHeight="26.0" prefWidth="51.0" text="Dice" />
+      <Button fx:id="beginRoll" layoutX="73.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#begin" prefHeight="30.0" prefWidth="103.0" text="Player 1 Roll" textFill="#208fe5" />
+      <Label fx:id="posDet" layoutX="9.0" layoutY="367.0" prefHeight="26.0" prefWidth="380.0" style="-fx-background-color: #FFFFFF;" />
+      <Button fx:id="beginRoll2" layoutX="235.0" layoutY="332.0" mnemonicParsing="false" onMouseClicked="#begin2" prefHeight="30.0" prefWidth="103.0" text="Player 2 Roll" textFill="#f85454" />
+      <ImageView fx:id="diceImage" fitHeight="51.0" fitWidth="51.0" layoutX="322.0" layoutY="189.0" onMouseClicked="#begin" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="bluePawn" fitHeight="26.0" fitWidth="25.0" layoutX="14.0" layoutY="287.0" opacity="0.96" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../../../bluePiece.png" />
+      </ImageView>
+      <ImageView fx:id="redPawn" fitHeight="26.0" fitWidth="25.0" layoutX="29.0" layoutY="287.0" opacity="0.81" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../redPiece.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="exit2" layoutX="336.0" layoutY="29.0" mnemonicParsing="false" text="EXIT" />
+      <ImageView fx:id="pointing2" fitHeight="30.0" fitWidth="51.0" layoutX="47.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pointing.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
